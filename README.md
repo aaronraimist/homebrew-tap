@@ -15,13 +15,12 @@ Open a terminal and run the following `brew` command:
 $ brew tap aaronraimist/tap
 ```
 
-This command will clone the repository to your computer and makes the instaler
+This command will clone the repository to your computer and make the
 formulae availabe. You can then install each program with brew, e.g.
 
 ```sh
-$ brew install spectral
+$ brew cask install spectral
 ```
-
 to install [Spectral](https://gitlab.com/b0/spectral).
 
 ## Feedback
@@ -31,11 +30,13 @@ formulae. For software related issues see the projects repository. To find a
 project repository run `brew info`, for example with `spectral`
 
 ```sh
-$ brew info goserve
-kevingimbel/tap/goserve: stable 1.0.2
-Simple static file server written in Go
-https://github.com/kevingimbel/goserve
-/usr/local/Cellar/goserve/1.0.2 (4 files, 4.2MB) *
-  Built from source on 2017-09-12 at 17:36:09
-From: https://github.com/kevingimbel/homebrew-tap/blob/master/goserve.rb
+$ brew cask info spectral
+spectral: 0.0.0.491
+https://gitlab.com/b0/spectral
+Not installed
+From: https://github.com/aaronraimist/homebrew-tap/blob/master/Casks/spectral.rb
+==> Name
+Spectral
+==> Artifacts
+spectral.app (App)
 ```
