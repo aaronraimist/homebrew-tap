@@ -1,4 +1,4 @@
-cask 'spectral' do
+class 'spectral' < Formula
   version '0.0.0.491'
   sha256 'ea5e6702a733e9377b70bb17c7bb75e50ccb09956340da6db7654c7059692030'
 
