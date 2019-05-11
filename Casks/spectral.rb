@@ -1,6 +1,6 @@
 cask 'spectral' do
-  version '0.0.0.491'
-  sha256 'ea5e6702a733e9377b70bb17c7bb75e50ccb09956340da6db7654c7059692030'
+  version '0.0.0.605'
+  sha256 '036642555c3ee16d3d7f6f2e6e52c46386e836657cc20379ac51ebd418eb4202'
 
   # dl.bintray.com/encombhat was verified as official when first introduced to the cask
   url "https://dl.bintray.com/encombhat/Spectral/spectral-#{version}.dmg"
