@@ -1,7 +1,7 @@
 # homebrew-tap
 
 This repository holds formulae for installing some software that can't be
-included in homebrew-cask (yet). Formulae can be installed with [brew](https://brew.sh),
+included in homebrew (yet). Formulae can be installed with [brew](https://brew.sh),
 a "package manager" for macOS.
 
 ## How To
