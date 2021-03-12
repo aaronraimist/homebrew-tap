@@ -1,8 +1,8 @@
 class Gomuks < Formula
   desc "Terminal based Matrix client written in Go"
   homepage "https://maunium.net/go/gomuks"
-  url "https://github.com/tulir/gomuks/archive/v0.2.1.tar.gz"
-  sha256 "513da6d936af5f570b5f8b491f361cab23b05d9a84e94d337766d44076a5744f"
+  url "https://github.com/tulir/gomuks/archive/v0.2.3.tar.gz"
+  sha256 "a21dc27175abe1f6ec220dda71cec69f6abc982f60237e35100a366934fd9185"
 
   depends_on "go" => :build
   depends_on "libolm"
