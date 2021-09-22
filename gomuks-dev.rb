@@ -14,7 +14,7 @@ class GomuksDev < Formula
   end
 
   test do
-    assert_equal "gomuks version v#{version}", shell_output("#{bin}/gomuks --version").strip
+    assert_equal "gomuks version v#{version.to_s[0, 5]}", shell_output("#{bin}/gomuks-dev --version").strip
   end
 
   # gomuks stores things in ~/Library/Caches/gomuks and ~/Library/Application Support/gomuks
