@@ -5,6 +5,10 @@ class Gomuks < Formula
   sha256 "e5212c416a84a5e8f46ab6b36cf9cfec36918930dbf7a155cce00570887600f7"
   head "https://github.com/tulir/gomuks.git", branch: "master"
 
+  livecheck do
+    url :stable
+  end
+
   depends_on "go" => :build
   depends_on "libolm"
 

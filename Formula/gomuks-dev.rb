@@ -1,9 +1,13 @@
 class GomuksDev < Formula
   desc "Terminal based Matrix client written in Go"
   homepage "https://maunium.net/go/gomuks"
-  url "https://github.com/tulir/gomuks/archive/e569c1519a1041c13b3b7fc76daef58bc4454e4d.tar.gz"
-  version "0.2.4-e569c15"
-  sha256 "8daf3f9afdcf5a924a2e3693c3ac9ae880f288194399eb73a6f8c3585c241576"
+  url "https://github.com/tulir/gomuks/archive/e6a2c3ff85358c271e8b28888fc4b9c9f0585d07.tar.gz"
+  version "0.3.1-e6a2c3f"
+  sha256 "e215cf5d907f9af4cfd308de8b898d0eaf24cd4c65b93464411412f71b9b7b92"
+
+  livecheck do
+    skip "Unstable"
+  end
 
   depends_on "go" => :build
   depends_on "libolm"
@@ -14,7 +18,7 @@ class GomuksDev < Formula
   end
 
   test do
-    assert_equal "gomuks #{version.to_s[0, 5]}", shell_output("#{bin}/gomuks-dev --version").strip
+    assert_match "gomuks #{version.major_minor_patch}", shell_output("#{bin}/gomuks-dev --version").strip
   end
 
   # gomuks stores things in ~/Library/Caches/gomuks and ~/Library/Application Support/gomuks
