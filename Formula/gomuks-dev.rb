@@ -9,12 +9,12 @@ class GomuksDev < Formula
   depends_on "libolm"
 
   def install
-    system "go", "build", *std_go_args, "-ldflags", "-s -w"
+    system "go", "build", *std_go_args, "-ldflags", "-s -w -X main.Tag=#{version} -X 'main.BuildTime=#{Time.now}'"
     doc.install "README.md"
   end
 
   test do
-    assert_equal "gomuks version v#{version.to_s[0, 5]}", shell_output("#{bin}/gomuks-dev --version").strip
+    assert_equal "gomuks #{version.to_s[0, 5]}", shell_output("#{bin}/gomuks-dev --version").strip
   end
 
   # gomuks stores things in ~/Library/Caches/gomuks and ~/Library/Application Support/gomuks
