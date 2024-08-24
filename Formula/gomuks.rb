@@ -1,7 +1,7 @@
 class Gomuks < Formula
   desc "Terminal based Matrix client written in Go"
   homepage "https://maunium.net/go/gomuks"
-  url "https://github.com/tulir/gomuks/archive/v0.3.1.tar.gz"
+  url "https://github.com/tulir/gomuks/archive/refs/tags/v0.3.1.tar.gz"
   sha256 "e5212c416a84a5e8f46ab6b36cf9cfec36918930dbf7a155cce00570887600f7"
   head "https://github.com/tulir/gomuks.git", branch: "master"
 
